@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5rem;
+    background-color: #F2F4F8;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 20px;
+}
+
+input {
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding: 0 10px;
+    height: 60px;
+    outline: none;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.settings {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.number-of-letters-input {
+    flex: 1;
+}
+
+.has-spaces-radio {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.has-spaces-radio input {
+    display: none;
+}
+
+.has-spaces-radio input+label {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    height: 60px;
+    background-color: #CCC;
+    color: #888;
+    cursor: pointer;
+}
+
+.has-spaces-radio input:checked+label {
+    background-color: rgb(31, 179, 31);
+    color: white;
+}
+
+.letters-inputs-container {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.letters-inputs-container input {
+    width: 40px;
+}
+
+.results-panel-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.results-panel-container button {
+    padding: 7px 10px;
+    border: 0;
+    background-color: #585858;
+    color: #FFF;
+    border-radius: 5px;
+    cursor: pointer;
+}

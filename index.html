@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gartic</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="controls">
+			<div class="settings">
+				<div class="has-spaces-radio">
+					<input type="radio" name="has-spaces" id="has-spaces-1">
+					<label for="has-spaces-1">Tem espaço</label>
+					<input type="radio" name="has-spaces" id="has-spaces-2" checked>
+					<label for="has-spaces-2">Não tem espaço</label>
+				</div>
+				<input id="number-of-letters" class="number-of-letters-input" type="number" min="2"
+					placeholder="Número de letras">
+			</div>
+			<div class="letters-inputs-container" id="letters-inputs"></div>
+		</div>
+		<div class="results-info">
+			<div class="results-panel-container" id="results-panel"></div>
+		</div>
+		<input type="text" class="hide" id="to-copy-input">
+	</div>
+
+	<script src="./words.js"></script>
+	<script src="./app.js"></script>
+</body>
+
+</html>
